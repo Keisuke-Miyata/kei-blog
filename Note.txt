@@ -1,0 +1,40 @@
+rm -r Story
+touch chapter1.txt
+
+#to open this file with a text editor
+
+start chapter1.txt
+
+#Initialize empty Git repository in my C drive
+
+git init
+
+#To see a hidden file
+
+ls -a
+
+git status
+
+git add chapter1.txt
+
+git commit -m "Complete Chapter1.txt"
+
+git log
+
+#add every files that are not tracked
+
+git add .
+
+# To check the difference in the files
+
+git diff chapter3.txt
+
+# Use the unmodified file
+
+git checkout chapter3.txt
+
+## push an existing repsitory from the command line to Github
+https://github.com/beethoven-web/Story.git
+
+git remote add origin https://github.com/beethoven-web/Story.git
+git push -u origin master
