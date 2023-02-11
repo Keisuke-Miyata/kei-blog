@@ -1,4 +1,3 @@
-import os
 
 from flask import Flask, render_template, redirect, url_for, flash, g, request, abort
 from flask_bootstrap import Bootstrap
