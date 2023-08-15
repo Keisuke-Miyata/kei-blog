@@ -147,7 +147,9 @@ def contact():
 @app.route("/new-post")
 @admin_only
 def add_new_post():
+    print("this has been executed")
     form = CreatePostForm()
+    print("this has been executed")
     if form.validate_on_submit():
         new_post = BlogPost(
             title=form.title.data,
